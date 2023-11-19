@@ -84,4 +84,4 @@ mode: \"development\",
 };" >| webpack.config.js
 
 # Copy start command to package.json and use command to start project
-printf "Copy to scripts in package.json: \"start\": \"webpack serve --config webpack.config.js\""
+printf "Copy to scripts in package.json: \"start\": \"webpack serve --config webpack.config.js\", move into new project directory and run: npm run start"

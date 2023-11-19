@@ -5,12 +5,14 @@ I created a script for creating react apps based on https://javascript.plainengl
 ## Local Startup:
 1. fork project
 2. sh react-from-scratch.sh PROJECT_NAME
-3. move into the new project directory and copy, `"start": "webpack serve --config webpack.config.js"`, to scripts in package.json
+3. prompt should appear, requesting to move into the new project directory and copy `"start": "webpack serve --config webpack.config.js"` to scripts in package.json
 4. npm run start
-5. project will be running at http://localhost:8080/
+5. project will be running at `http://localhost:8080/`
 
 ## Completed Features:
 1. Generates a new react project built with webpack
 
 ## Incomplete features:
-1. add the start script to package.json so that it does not need to be done manually
+1. add the start script to package.json 
+2. add gitignore with content node_modules
+3. generate the index.html file in a public directory
