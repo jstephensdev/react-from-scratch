@@ -1,5 +1,5 @@
 # Create app and move into  its directory
-mkdir new-react-app-from-scratch && cd new-react-app-from-scratch
+mkdir $1 && cd $1
 
 # Generate a plain old package.json without asking questions 
 npm init -y
