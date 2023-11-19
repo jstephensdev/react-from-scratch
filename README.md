@@ -1,13 +1,16 @@
+# React From Scratch
+
 I created a script for creating react apps based on https://javascript.plainenglish.io/create-a-react-app-from-scratch-in-2021-8e9948602e9c.
 
-to use:
-sh react-from-scratch.sh PROJECT_NAME
-move into the new project directory and copy, `"start": "webpack serve --config webpack.config.js"`, to scripts in package.json
-npm run start
-project will be running at http://localhost:8080/
+## Local Startup:
+1. fork project
+2. sh react-from-scratch.sh PROJECT_NAME
+3. move into the new project directory and copy, `"start": "webpack serve --config webpack.config.js"`, to scripts in package.json
+4. npm run start
+5. project will be running at http://localhost:8080/
 
-features:
-Generates a new react project
+## Completed Features:
+1. Generates a new react project built with webpack
 
-features I'd like to add:
-add the start script so that it does not need to be done manually
+## Incomplete features:
+1. add the start script to package.json so that it does not need to be done manually
