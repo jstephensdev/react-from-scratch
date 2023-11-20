@@ -16,3 +16,4 @@ I created a script for creating react apps based on https://javascript.plainengl
 1. add the start script to package.json 
 2. add gitignore with content node_modules
 3. generate the index.html file in a public directory
+4. add webpack build command

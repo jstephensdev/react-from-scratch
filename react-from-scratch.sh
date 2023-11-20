@@ -8,12 +8,12 @@ npm init -y
 npm i webpack babel-loader @babel/preset-react babel-preset-react html-webpack-plugin webpack-dev-server css-loader style-loader @babel/plugin-proposal-class-properties webpack-cli -D && npm i react react-dom -S
 
 # Add src directory, move into directory, create index.js, App.js, and index.html
-mkdir src && cd src && touch index.js && touch App.js && touch index.html && touch styles.css
+mkdir src && cd src && touch index.js && touch App.jsx && touch index.html && touch styles.css
 
 # Fill in initial content for index.js, App.js, index.html, and styles.css
 echo "import React from \"react\";
 import { createRoot } from \"react-dom/client\";
-import App from \"./App.js\";
+import App from \"./App.jsx\";
 
 const rootElement = document.getElementById(\"root\");
 
@@ -29,7 +29,7 @@ export default function App() {
         <p>Hello World</p>
     </div>
   )
-}" >| App.js
+}" >| App.jsx
 
 echo "<!DOCTYPE html>
 <html lang=\"en\">
@@ -69,7 +69,7 @@ mode: \"development\",
   module: {
   rules: [
   {
-   test: /\.js$/,
+   test: [/\.js$/, /\.jsx$/],
    exclude: /node_modules/,
    use: {
      loader: \"babel-loader\"
@@ -84,4 +84,4 @@ mode: \"development\",
 };" >| webpack.config.js
 
 # Copy start command to package.json and use command to start project
-printf "Copy to scripts in package.json: \"start\": \"webpack serve --config webpack.config.js\", move into new project directory and run: npm run start"
+printf "Move into new project directory and copy the following into scripts in package.json: \"start\": \"webpack serve --config webpack.config.js\". Run npm run start and go to localhost:8080"
